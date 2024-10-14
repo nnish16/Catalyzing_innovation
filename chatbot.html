@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Catalyzing Innovation | Innovizer® </title>
+  <!-- Linking Google Fonts For Icons -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@24,400,0,0" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <link rel="stylesheet" href="chatbot.css">
+</head>
+<body>
+
+    <button class="menu-btn" id="toggle-btn">
+        <i class="fas fa-bars"></i> <!-- Hamburger Icon -->
+    </button>
+    
+
+    <div class="sidebar" id="sidebar">
+        <div class="logo">
+            <h2>Catalyzing<br/>Innovation<br/> Innovizer®</h2>
+        </div> 
+        <nav>
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="features.html">Features</a></li>
+                <li><a href="pricing.html">Pricing</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Support</a></li>
+            </ul>
+        </nav>
+    </div>
+
+
+  <header class="header">
+    <!-- Header Greetings -->
+    <h1 class="title">Hello there, </h1>
+    <p class="subtitle">How can Catalyzier help you today?</p>
+
+    <!-- Suggestion list -->
+    <ul class="suggestion-list">
+      <li class="suggestion">
+        <h4 class="text">Suggestion generated through ML model or chatgpt *backend integration required*</h4>
+        <span class="icon material-symbols-rounded">draw</span>
+      </li>
+      <li class="suggestion">
+        <h4 class="text">Suggestion generated through ML model or chatgpt *backend integration required*</h4>
+        <span class="icon material-symbols-rounded">lightbulb</span>
+      </li>
+      <li class="suggestion">
+        <h4 class="text">Suggestion generated through ML model or chatgpt *backend integration required*</h4>
+        <span class="icon material-symbols-rounded">explore</span>
+      </li>
+      <li class="suggestion">
+        <h4 class="text">Suggestion generated through ML model or chatgpt *backend integration required*</h4>
+        <span class="icon material-symbols-rounded">code</span>
+      </li>
+    </ul>
+  </header>
+
+  <!-- Chat List / Container -->
+  <div class="chat-list"></div>
+
+  <!-- Typing Area -->
+  <div class="typing-area">
+    <form action="#" class="typing-form">
+      <div class="input-wrapper">
+        <input type="text" placeholder="Enter a prompt here" class="typing-input" required />
+        <button id="send-message-button" class="icon material-symbols-rounded">send</button>
+      </div>
+      <div class="action-buttons">
+        <span id="theme-toggle-button" class="icon material-symbols-rounded">light_mode</span>
+        <span id="delete-chat-button" class="icon material-symbols-rounded">delete</span>
+      </div>
+    </form>
+    <p class="disclaimer-text">
+      Catalyzing Innovation Innovizer® drives innovation, but some information may be inaccurate.
+    </p>
+  </div>
+
+  <script src="chatbot.js"></script>
+</body>
+</html>
